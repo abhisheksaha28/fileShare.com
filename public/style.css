@@ -1,0 +1,149 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	background: #3947b2;
+	font-family: "Roboto",sans-serif;
+}
+.screen {
+	display: none;
+}
+.screen.active {
+	display: block;
+}
+.app {
+	position: fixed;
+	top: 50px;
+	bottom:50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	/* height: 100%; */
+	max-width: 500px;
+	border: 5px solid #271f6d;
+	border-radius: 50px;
+	box-shadow: 10px 10px 18px 7px black;
+	/* border-right: 1px solid #ddd; */
+	background: #129289;
+}
+
+.join-screen .form {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 50px;
+}
+.join-screen .form .form-input {
+	margin: 10px 0px;
+}
+.join-screen .form h2 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	line-height:45px;
+	font-family: "Montserrat",sans-serif;
+}
+.join-screen .form button {
+	background: #00064f;
+	box-shadow: 5px 8px 10px 2px black;
+	margin: 10px;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 20px;
+}
+.join-screen .form #join-id b {
+	color: #222;
+	display: block;
+	margin-top: 20px;
+}
+.join-screen .form #join-id span {
+	display: inline-block;
+    font-size: 40px;
+    font-family: monospace;
+    color: #e8ff00;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    margin-top: 5px;
+    background-color: #002c38;
+
+}
+.join-screen .form .form-input label {
+	color: #222;
+	font-size: 18px;
+}
+.join-screen .form .form-input input {
+	display: block;
+	margin:10px 0px;
+	width: 100%;
+	max-width: 200px;
+	color: #e8ff00;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    
+    background-color: #002c38;
+
+	font-size: 20px;
+	
+}
+
+.fs-screen {
+	padding: 20px;
+}
+.fs-screen .file-input {
+	width: 100%;
+	border: 2px dashed #000;
+}
+.fs-screen .file-input label {
+	display: block;
+	width: 100%;
+	padding: 40px 50px;
+	text-align: center;
+	color: #1d2d67;
+    font-size: 20px;
+    font-weight: bold;
+}
+.fs-screen .file-input label:hover{
+	background-color: #147a96;
+}
+.fs-screen .file-input input {
+	display: none;
+}
+.fs-screen .files-list {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.fs-screen .files-list .title {
+	width: 100%;
+	margin: 20px 0px;
+}
+.fs-screen .files-list .item {
+	width: 33%;
+    min-width: 200px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 7px 7px 16px 0px #000738;
+
+}
+.fs-screen .files-list .item .progress {
+	padding: 30px;
+    background-color: #004268;
+    text-align: center;
+    font-size: 50px;
+    color: #00ffef;
+    font-family: "Montserrat";
+}
+.fs-screen .files-list .item .filename {
+	padding: 5px;
+	font-size: 18px;
+	border-top: 1px solid #eee;
+}
